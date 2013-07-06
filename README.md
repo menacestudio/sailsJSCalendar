@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-# TestSailsProj
-### a Sails application
-=======
-sailsJSCalendar
-===============
->>>>>>> a6c33c32f2c0931e61f7a8024b322fa67b9d14c9
+### Sails JS Calendar
+A calendar app to keep track of working days built on top of Sails JS.
+
+#### Requirements:
+- Set the start and end date.
+- Set the holidays to block out those dates.
+- Keep track of days worked vs. working days left.
