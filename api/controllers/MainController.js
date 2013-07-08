@@ -3,8 +3,12 @@
 	-> controller
 ---------------------*/
 var MainController = {
-    index: function (req, res) {
-         res.view();
+    home: function (req, res) {
+	    if (req.session.user) {
+	        res.view({username: req.session.user.username});
+	    } else {
+	        res.view();
+	    }
     },
     about: function(req, res){
 		res.view();

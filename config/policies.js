@@ -6,8 +6,8 @@
 module.exports.policies = {
 
 	// Default policy (allow public access)
-	'*': true
-
+	'*': true,
+	'events': 'eventsPolicy'
 	/** Example mapping: 
 	someController: {
 
