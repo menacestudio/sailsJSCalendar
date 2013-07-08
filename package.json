@@ -5,7 +5,8 @@
     "description": "a Sails application",
     "dependencies": {
         "sails": "0.8.94",
-        "optimist": "0.4.0"
+        "optimist": "0.4.0",
+        "password-hash": "1.2.1"
     },
     "scripts": {
         "start": "node app.js",
