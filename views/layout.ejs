@@ -5,18 +5,42 @@
 
 		<!-- Viewport mobile tag for sensible mobile support -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-		
+		<!--<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">-->
 		<!-- Stylesheets from your assets folder are included here -->
 		<%- assets.css() %>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	</head>
 
 	<body>
-		<%- body %>
+		<div class="navbar">
+		    <div class="navbar-inner">
+		      <div style="width: auto;" class="container">
+		        <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		        </a>
+		        <a href="#" class="brand">Days Tracker</a>
+		        <div class="nav-collapse">
+		          <ul class="nav">
+		            <li><a href="/">Home</a></li>
+		            <li><a href="/about">About</a></li>
+		          </ul>
+		        </div><!-- /.nav-collapse -->
+		      </div>
+		    </div><!-- /navbar-inner -->
+	  	</div>
+		<div class="container">
+		  	<div id="main-body">
+	  			<%- body %>
 
-		<!-- Templates from your view path are included here -->
-		<%- assets.templateLibrary() %>
+				<!-- Templates from your view path are included here -->
+				<%- assets.templateLibrary() %>	  			
+  			</div>
+		</div>
+
 		<!-- Javascripts from your assets folder are included here -->
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
 		<%- assets.js() %>

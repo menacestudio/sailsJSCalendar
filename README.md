@@ -7,5 +7,6 @@ A calendar app to keep track of working days built on top of Sails JS.
 - Keep track of days worked vs. working days left.
 
 #### Libraries:
+- Twitter Bootstrap
 - Underscore
 - BackboneJS
