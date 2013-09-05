@@ -25,6 +25,14 @@ var EventsController = {
 		            "class": "event-important",
 		            "start": new Date('10/03/2013').getTime(), // Milliseconds
 		            "end": new Date('10/04/2013').getTime() // Milliseconds
+		        },
+		        {
+		            "id": 3,
+		            "title": "Christmas Day",
+		            "url": "http://seis.org",
+		            "class": "event-important",
+		            "start": new Date('12/25/2013').getTime(), // Milliseconds
+		            "end": new Date('12/26/2013').getTime() // Milliseconds
 		        }
 		    ]
 		});
