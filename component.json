@@ -1,0 +1,7 @@
+{
+  "name": "TestSailsProj",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap-calendar": "~0.1.0-beta"
+  }
+}
