@@ -1,7 +1,7 @@
 module.exports = {
 	
 	// Name of the application (used as default <title>)
-	appName: "Calendar",
+	appName: "Events Tracker",
 
 	// Port this Sails application will live on
 	port: process.env.PORT || 1337,

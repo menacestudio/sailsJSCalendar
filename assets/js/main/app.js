@@ -2,7 +2,7 @@
 	$(function(){
 		var calendar = $('#calendar').calendar({
 			language: 'en-GB', 
-			events_url:'/events/list',
+			events_url:'/event/list?userId='+1234,
 			view: 'month',
 			tmpl_path: '/tmpls/',
 			holidays: {
@@ -48,6 +48,15 @@
 			$this.click(function() {
 				calendar.view($this.data('calendar-view'));
 			});
+		});
+
+		$('#frmAddEvent').submit(function(e){
+			e.preventDefault();
+
+			$.post('/event/add', $(this).serialize(), function(data){
+				console.log(data);
+			});
+			
 		});
 	});
 })(jQuery);
