@@ -3,8 +3,7 @@
 		var $eventModal = $('#addEventModel');
 		$('#addEvent').on('click', function(e){
 			e.preventDefault();
-
-			$eventModal.modal({ show: true});
+			App.Utils.Modal.Open($eventModal);
 		});
 
 		// Add event
@@ -12,10 +11,9 @@
 			e.preventDefault();
 
 			$.post('/event/add', $(this).serialize(), function(data){
-				$eventModal.modal('hide');
+				App.Utils.Plugins.Calendar.refresh();
+				App.Utils.Modal.Close($eventModal);
 
-				// Todo: refresh calendar and events
-				
 				// Todo: wipe out form.
 			});
 		});

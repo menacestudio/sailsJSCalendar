@@ -10,6 +10,7 @@ A calendar app to keep track of working days and events built on top of Sails JS
 #### Libraries:
 - Twitter Bootstrap (Bootswatch Flatly theme - http://bootswatch.com/flatly/)
 - Bootstrap calendar - https://github.com/Serhioromano/bootstrap-calendar
+- Bootbox - http://bootboxjs.com/
 - Underscore
 - MomentJS
 - BackboneJS or EmberJS
