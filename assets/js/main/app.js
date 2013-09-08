@@ -1,5 +1,12 @@
 (function($){
 	$(function(){
+		// Set nav active link
+		_.each($('.navbar-fixed-top li a'), function(x){
+		    if ( window.location.pathname == $(x).attr('href')) {
+		        $(x).parent('li').addClass('active')
+		    }
+		});
+
 		var $eventModal = $('#addEventModel');
 		$('#addEvent').on('click', function(e){
 			e.preventDefault();

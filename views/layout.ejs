@@ -12,40 +12,50 @@
 	</head>
 
 	<body>
-		<div class="navbar">
-		    <div class="navbar-inner">
-		      <div style="width: auto;" class="container">
-		        <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
-		          <span class="icon-bar"></span>
-		          <span class="icon-bar"></span>
-		          <span class="icon-bar"></span>
-		        </a>
-		        <a href="/" class="brand">Events Tracker</a>
-		        <div class="nav-collapse">
-		          <ul class="nav">
-		            <li><a href="/">Home</a></li>
-		            <li><a href="/about">About</a></li>
-		            <li><a href="/event/calendar">Calendar</a></li>
-		          </ul>
-		        </div><!-- /.nav-collapse -->
-		      </div>
-		    </div><!-- /navbar-inner -->
-	  	</div>
-		<div class="container">
-		  	<div id="main-body">
-		  	
-	  			<%- body %>
+		<!-- Nav -->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a href="/" class="navbar-brand">Events Calendar</a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="/">Home</a></li>
+	            <li><a href="/about">About</a></li>
+	            <li><a href="/event/calendar">Calendar</a></li>
+	          </ul>
+	          <form class="navbar-form navbar-right">
+	            <div class="form-group">
+	              <input type="text" class="form-control" placeholder="Email">
+	            </div>
+	            <div class="form-group">
+	              <input type="password" class="form-control" placeholder="Password">
+	            </div>
+	            <button class="btn btn-success" type="submit">Sign in</button>
+	          </form>
+	        </div><!--/.navbar-collapse -->
+	      </div>
+	    </div>
 
-				<!-- Templates from your view path are included here -->
-				<%- assets.templateLibrary() %>	  			
-  			</div>
+		<div class="jumbotron">
+		  <div class="container">
+				<!-- Notifications can go here -->
+		  </div>
 		</div>
 
-		<!-- Javascripts from your assets folder are included here -->
-		<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+	    <!-- Content -->
+		<div class="container">
+		<%- body %>
+		<%- assets.templateLibrary() %>	  	
+		</div>
+
 		<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
 		<%- assets.js() %>
-
 	</body>
 </html>
