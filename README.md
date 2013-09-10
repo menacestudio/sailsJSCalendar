@@ -1,11 +1,10 @@
 ### Sails JS Calendar
-A calendar app to keep track of working days and events built on top of Sails JS. The goal of the project is to learn Sails JS and distribute the code so the whole community can contribute and learn.
+A calendar app to keep track of events built on top of Sails JS / Node.JS. 
 
-#### Requirements:
-1. Set the start and end date for the given range.
-2. Authentication.
-3. Add events.
-4. Use MongoDB to store data.
+#### The goal:
+1. Authentication.
+2. Add events.
+3. Use MongoDB for data storage.
 
 #### Libraries:
 - Twitter Bootstrap v3
