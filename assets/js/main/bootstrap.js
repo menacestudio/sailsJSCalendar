@@ -27,6 +27,15 @@
 	                { 'label': 'Cancel', 'class': '', 'callback': cancelCallback },
 	                { 'label': confirmText, 'class': 'btn-danger', 'callback': clickCallback }
 	            ]);
+        	}, 
+        	Notify: function(msg, cls){
+        		cls = cls || 'alert-success';
+        		var $message = $('<h5 class="alert '+cls+'">'+msg+'</h5>');
+        		$('.notifications').html($message);
+
+    			_.delay(function(){
+    				$message.fadeOut(1000);
+    			}, 5000)
         	}
         };
 

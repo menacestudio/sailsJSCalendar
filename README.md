@@ -8,9 +8,9 @@ A calendar app to keep track of working days and events built on top of Sails JS
 4. Use MongoDB to store data.
 
 #### Libraries:
-- Twitter Bootstrap (Bootswatch Flatly theme - http://bootswatch.com/flatly/)
+- Twitter Bootstrap v3
 - Bootstrap calendar - https://github.com/Serhioromano/bootstrap-calendar
 - Bootbox - http://bootboxjs.com/
-- Underscore
+- UnderscoreJS
 - MomentJS
-- BackboneJS or EmberJS
+- BackboneJS

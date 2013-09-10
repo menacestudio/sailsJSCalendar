@@ -21,6 +21,8 @@
 				App.Utils.Plugins.Calendar.refresh();
 				App.Utils.Modal.Close($eventModal);
 
+				App.Utils.Notify('<strong>Success!</strong> Event was added successfully!');
+				
 				// Todo: wipe out form.
 			});
 		});
